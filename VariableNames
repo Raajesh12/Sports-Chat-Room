@@ -1,0 +1,38 @@
+Category Info:
+name : string
+description : string
+portfolio_set.all() : Portfolio object list
+
+Donation Object Info:
+donor : User object
+portfolio : Portfolio object
+amount : float
+date : Django.date object
+honor : string
+
+Event Info:
+title : string
+date : Django.date object
+brief : string
+link : string
+categories : Category object list
+must_host : bool
+affiliation : string
+description : string
+
+Portfolio Info:
+name : string
+description : string
+categories : Category object list
+
+User Info:
+first_name : string
+last_name : string
+email : string
+password : string
+interests : Category object list
+phone : string
+affiliation : string
+address : string
+username : string
+
