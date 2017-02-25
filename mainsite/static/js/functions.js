@@ -13,15 +13,3 @@ openCrceWebsite = function(){
 openRecreationWebsite = function(){
     window.open("https://campusrec.illinois.edu/");
 }
-
-openArcTab = function(){
-    location.replace("arc.html");
-}
-
-openCrceTab = function(){
-    location.replace("crce.html");
-}
-
-openArmoryTab = function(){
-    location.replace("armory.html");
-}
