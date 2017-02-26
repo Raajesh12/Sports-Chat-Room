@@ -222,14 +222,72 @@
 
           var socket = io.connect();
           if(socket !== undefined) {
-            socket.on('armory output', function(data) {
+
+            socket.on('crce soccer output', function(data) {
               if(data.length){
 
                   $(function() {
-                    var $messageForm = $('#messageForm');
-                    var $message = $('#message');
-                    var $name = $('#nameInput');
-                    var $chat = $('#chat');
+                    var $soccermessageForm = $('#soccermessageForm');
+                    var $soccermessage = $('#soccermessage');
+                    var $soccernameInput = $('#soccernameInput');
+                    var $chatsoccer = $('#chatsoccer');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chatsoccer.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
+
+            socket.on('crce basketball output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $basketballmessageForm = $('#basketballmessageForm');
+                    var $basketballmessage = $('#basketballmessage');
+                    var $basketballnameInput = $('#basketballnameInput');
+                    var $chatbasketball = $('#chatbasketball');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chatbasketball.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
+
+            socket.on('crce squash output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $squashmessageForm = $('#squashmessageForm');
+                    var $squashmessage = $('#squashmessage');
+                    var $squashnameInput = $('#squashnameInput');
+                    var $chatsquash = $('#chatsquash');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chatsquash.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
+
+            socket.on('crce athletics output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $athleticsmessageForm = $('#athleticsmessageForm');
+                    var $athleticsmessage = $('#athleticsmessage');
+                    var $athleticsnameInput = $('#athleticsnameInput');
+                    var $chatathletics = $('#chatathletics');
 
                     for(var x = 0; x < data.length; x = x + 1){
                       console.log(data[x]);
@@ -238,30 +296,176 @@
                       }
                     }
                   });
-
               }
             });
 
+            socket.on('crce volleyball output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $volleyballmessageForm = $('#volleyballmessageForm');
+                    var $volleyballmessage = $('#volleyballmessage');
+                    var $volleyballnameInput = $('#volleyballnameInput');
+                    var $chatvolleyball = $('#chatvolleyball');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chatvolleyball.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
+
+            socket.on('crce tt output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $tabletennismessageForm = $('#tabletennismessageForm');
+                    var $tabletennismessage = $('#tabletennismessage');
+                    var $tabletennisnameInput = $('#tabletennisnameInput');
+                    var $chattabletennis = $('#chattabletennis');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chattabletennis.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
+
+            socket.on('crce mph output', function(data) {
+              if(data.length){
+
+                  $(function() {
+                    var $mphmessageForm = $('#mphmessageForm');
+                    var $mphmessage = $('#mphmessage');
+                    var $mphnameInput = $('#mphnameInput');
+                    var $chatmph = $('#chatmph');
+
+                    for(var x = 0; x < data.length; x = x + 1){
+                      console.log(data[x]);
+                      if(data[x].name !== ''){
+                        $chatmph.append('<div class = "chat-message"><b>'+data[x].name + "</b>: "+data[x].msg+'</div>');
+                      }
+                    }
+                  });
+              }
+            });
 
           }
 
           $(function() {
             var socket = io.connect();
-            var $messageForm = $('#messageForm');
-            var $message = $('#message');
-            var $name = $('#nameInput');
-            var $chat = $('#chat');
+            var $soccermessageForm = $('#soccermessageForm');
+            var $soccermessage = $('#soccermessage');
+            var $soccernameInput = $('#soccernameInput');
+            var $chatsoccer = $('#chatsoccer');
+            var $basketballmessageForm = $('#basketballmessageForm');
+            var $basketballmessage = $('#basketballmessage');
+            var $basketballnameInput = $('#basketballnameInput');
+            var $chatbasketball = $('#chatbasketball');
+            var $squashmessageForm = $('#squashmessageForm');
+            var $squashmessage = $('#squashmessage');
+            var $squashnameInput = $('#squashnameInput');
+            var $chatsquash = $('#chatsquash');
+            var $athleticsmessageForm = $('#athleticsmessageForm');
+            var $athleticsmessage = $('#athleticsmessage');
+            var $athleticsnameInput = $('#athleticsnameInput');
+            var $chatathletics = $('#chatathletics');
+            var $volleyballmessageForm = $('#volleyballmessageForm');
+            var $volleyballmessage = $('#volleyballmessage');
+            var $volleyballnameInput = $('#volleyballnameInput');
+            var $chatvolleyball = $('#chatvolleyball');
+            var $tabletennismessageForm = $('#tabletennismessageForm');
+            var $tabletennismessage = $('#tabletennismessage');
+            var $tabletennisnameInput = $('#tabletennisnameInput');
+            var $chattabletennis = $('#chattabletennis');
+            var $mphmessageForm = $('#mphmessageForm');
+            var $mphmessage = $('#mphmessage');
+            var $mphnameInput = $('#mphnameInput');
+            var $chatmph = $('#chatmph');
 
-            $messageForm.submit(function(e){
+            $soccermessageForm.submit(function(e){
               e.preventDefault();
-              socket.emit('armory', {'name':$name.val(),'msg':$message.val()});
-              $message.val('');
+              socket.emit('crce soccer', {'name':$soccernameInput.val(),'msg':$soccermessage.val()});
+              $soccermessage.val('');
             });
 
-            socket.on('new armory', function(data) {
+            socket.on('new crce soccer', function(data) {
               console.log('asdf');
-              $chat.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+              $chatsoccer.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
             });
+
+            $basketballmessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce basketball', {'name':$basketballnameInput.val(),'msg':$basketballmessage.val()});
+              $basketballmessage.val('');
+            });
+
+            socket.on('new crce basketball', function(data) {
+              console.log('asdf');
+              $chatbasketball.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
+            $squashmessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce squash', {'name':$squashnameInput.val(),'msg':$squashmessage.val()});
+              $squashmessage.val('');
+            });
+
+            socket.on('new crce squash', function(data) {
+              console.log('asdf');
+              $chatsquash.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
+            $athleticsmessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce athletics', {'name':$athleticsnameInput.val(),'msg':$athleticsmessage.val()});
+              $athleticsmessage.val('');
+            });
+
+            socket.on('new crce athletics', function(data) {
+              console.log('asdf');
+              $chatathletics.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
+            $volleyballmessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce volleyball', {'name':$volleyballnameInput.val(),'msg':$volleyballmessage.val()});
+              $volleyballmessage.val('');
+            });
+
+            socket.on('new crce volleyball', function(data) {
+              console.log('asdf');
+              $chatvolleyball.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
+            $tabletennismessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce tt', {'name':$tabletennisnameInput.val(),'msg':$tabletennismessage.val()});
+              $tabletennismessage.val('');
+            });
+
+            socket.on('new crce TT', function(data) {
+              console.log('asdf');
+              $chattabletennis.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
+            $mphmessageForm.submit(function(e){
+              e.preventDefault();
+              socket.emit('crce mph', {'name':$mphnameInput.val(),'msg':$mphmessage.val()});
+              $mphmessage.val('');
+            });
+
+            socket.on('new crce mph', function(data) {
+              console.log('asdf');
+              $chatmph.append('<div class = "chat-message"><b>'+data.name + "</b>: "+data.msg+'</div>');
+            });
+
           });
         </script>
 
