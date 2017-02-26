@@ -68,76 +68,177 @@
     </nav>
 
       <div class="container-fluid" style="height: 100%; width: 100%">
-      <div class="row" style="height: 100%">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li id="soccer"><a onclick="">Soccer</a></li>
-            <li  id="basketball" ><a onclick="">Basketball</a></li>
-            <li id="squash"><a onclick="">Squash</a></li>
-            <li id="athletics"><a  onclick="">Atheletic (Track)</a></li>
-            <li id="volleyball"><a  onclick="">Volleyball</a></li>
-            <li id="tabletennis" ><a onclick="">Table Tennis</a></li>
-            <li  id="badminton" ><a onclick="">Badminton</a></li>
-            <li id="mph" ><a onclick="">Multi Purpose Halls</a></li>
-          </ul>
+        <div class="row" style="height: 100%">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+              <li  href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'soccerChat')"><a id="soccer">Soccer</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'basketballChat')"><a >Basketball</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'squashChat')"><a>Squash</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'athleticsChat')"><a>Atheletic (Track)</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'volleyballChat')"><a>Volleyball</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'tableTennisChat')"><a>Table Tennis</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'badmintonChat')"><a>Badminton</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'mphChat')"><a>Multi Purpose Halls</a></li>
+            </ul>
           </div>
 
-          <div style="background-image: url(basketball_court.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Basketball</h1>
-              <div class="fullChatBox">
-                <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
-                <div class="chat-messages">
-                  <div class="chat-message">
-                    Teja: This is a test message
+          <script>
+            window.onload = function () {
+                document.getElementById("soccer").click();
+            };
+          </script>
+
+            <div id = "soccerChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(soccer.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Soccer</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
                   </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
+              </div>
+            </div>
+
+
+            <div id = "basketballChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(basketball_court.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Basketball</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
                   </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
+              </div>
+            </div>
+
+
+            <div id = "squashChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(squash.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Squash</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
                   </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
-                  </div>
-                  <div class="chat-message">
-                    Teja: This is a test message
+              </div>
+            </div>
+
+
+            <div id = "athleticsChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(track.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Track</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
                   </div>
                 </div>
-                <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
-              </div>
-          </div>
-        </div>
+            </div>
+
+
+            <div id = "volleyballChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(volleyball.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Volleyball</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                  </div>
+                </div>
+            </div>
+
+
+            <div id = "tableTennisChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(table_tennis.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Table Tennis</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                  </div>
+                </div>
+            </div>
+
+            <div id = "badmintonChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(badminton.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Badminton</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                  </div>
+                </div>
+            </div>
+
+            <div id = "mphChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(mph.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">ARC Multipurpose Halls</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                  </div>
+                </div>
+            </div>
+
       </div>
+    </div>
 
 
 

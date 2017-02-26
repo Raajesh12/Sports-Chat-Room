@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 720px; width: 100%">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../static/css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,7 +43,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="height: 100%; width: 100%">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -75,13 +76,38 @@
       </div>
     </nav>
 
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fluid" style="height: 100%; width: 100%">
+        <div class="row" style="height: 100%">
           <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-              <li id="athletics"><a onclick="">Atheletic (Track)</a></li>
+              <li id="athletics" href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'athleticsChat')"><a>Atheletic (Track)</a></li>
             </ul>
           </div>
+
+          <script>
+            window.onload = function () {
+                document.getElementById("soccer").click();
+            };
+          </script>
+
+            <div id = "athleticsChat" class="tabcontent" style="height: 100%">
+              <div style="background-image: url(track.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header" style="text-align: center; color: #E5E8E8">Amory Track</h1>
+                  <div class="fullChatBox">
+                    <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                    <div class="chat-messages">
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                      <div class="chat-message">
+                        Teja: This is a test message
+                      </div>
+                    </div>
+                    <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                  </div>
+              </div>
+            </div>
+
         </div>
       </div>
 
