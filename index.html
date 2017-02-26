@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title> Chat App </title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h3> Online Users</h3>
+          <ul class="list-group"></ul>
+        </div>
+      </div>
+      <input type="text" class="chat-name" placeholder="Enter Your name">
+      <div class="col-md-8">
+        <div class="chat" id="chat"></div>
+
+        <form id="messageForm">
+          <div class="form-group">
+            <label>Enter Message</label>
+            <textarea class="form-control" id="name"></textarea>
+            <textarea class="form-control" id="message"></textarea>
+            <br/>
+            <input type="submit" class="btn btn-primary" value="Send Message"/>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function() {
+      var socket = io.connect();
+      var $messageForm = $('#messageForm');
+      var $message = $('#message');
+      var $name = $('#name');
+      var $chat = $('#chat');
+
+      $messageForm.submit(function(e){
+        e.preventDefault();
+        socket.emit('send message', {'name':$name.val(),'msg':$message.val()});
+        $message.val('');
+      });
+
+      socket.on('new message', function(data) {
+        $chat.append('<div class = "well"><b>'+data.name + "</b>: "+data.msg+'</div>');
+      });
+    });
+  </script>
+</body>
+</html>
