@@ -69,20 +69,70 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li id="soccer"><a onclick="">Soccer</a></li>
-            <li  id="basketball" ><a onclick="">Basketball</a></li>
-            <li id="squash"><a onclick="">Squash</a></li>
-            <li id="athletics"><a  onclick="">Atheletic (Track)</a></li>
-            <li id="volleyball"><a  onclick="">Volleyball</a></li>
-            <li id="tabletennis" ><a onclick="">Table Tennis</a></li>
-            <li id="mph" ><a onclick="">Multi Purpose Halls</a></li>
+            <li  href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'soccerChat')"><a id="soccer">Soccer</a>
+              </li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'basketballChat')"><a >Basketball</a></li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'squashChat')"><a>Squash</a></li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'athleticsChat')"><a>Atheletic (Track)</a></li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'volleyballChat')"><a>Volleyball</a></li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'tabletennisChat')"><a>Table Tennis</a></li>
+            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'mphChat')"><a>Multi Purpose Halls</a></li>
           </ul>
           </div>
-        </div>
-          
       </div>
-      
-      
+
+          <script>
+            window.onload = function () {
+                document.getElementById("soccer").click();
+            };
+          </script>
+
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">ChatRoom</h1>
+            <div id = "soccerChat" class="tabcontent">
+
+                
+                
+                
+            </div>
+            <div id = "basketballChat" class="tabcontent">
+ 
+                
+                
+            </div>
+            <div id = "squashChat" class="tabcontent">
+
+
+
+                
+            </div>
+            <div id = "athleticsChat" class="tabcontent">
+              
+                
+
+                
+            </div>
+            <div id = "volleyballChat" class="tabcontent">
+            
+                
+                
+
+            </div>
+            <div id = "tabletennisChat" class="tabcontent">
+             
+
+                
+                
+            </div>
+            <div id = "mphChat" class="tabcontent">
+              
+                
+
+                
+            </div>
+        </div>
+      </div>
+
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
