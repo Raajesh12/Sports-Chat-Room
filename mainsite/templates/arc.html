@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 720px">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="../static/img/logo.png">
 
     <title>ARC Chat</title>
@@ -32,7 +33,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="height: 100%; width: 100%">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -64,9 +65,9 @@
         </div>
       </div>
     </nav>
-      
-      <div class="container-fluid">
-      <div class="row">
+
+      <div class="container-fluid" style="height: 100%; width: 100%">
+      <div class="row" style="height: 100%">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li id="soccer"><a onclick="">Soccer</a></li>
@@ -79,12 +80,70 @@
             <li id="mph" ><a onclick="">Multi Purpose Halls</a></li>
           </ul>
           </div>
+
+          <div style="background-image: url(basketball_court.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header" style="text-align: center">ARC Basketball</h1>
+              <div class="fullChatBox">
+                <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                <div class="chat-messages">
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                  <div class="chat-message">
+                    Teja: This is a test message
+                  </div>
+                </div>
+                <textarea id = "textArea" placeholder="Type Your message"></textarea>
+              </div>
+          </div>
+
         </div>
-          
+
+
+
       </div>
-      
-      
-      
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
     <script src="../static/js/bootstrap.min.js"></script>
@@ -92,6 +151,6 @@
     <script src="../static/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../static/js/ie10-viewport-bug-workaround.js"></script>
-    
+
 </body>
 </html>
