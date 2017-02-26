@@ -5,7 +5,12 @@ body,
 }
 
 #textArea{
+  display: block;
   font: 13px "Courier New", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 75%;
 }
 
 .chat {
@@ -25,9 +30,10 @@ body,
   border: 1.5px black solid;
   padding: 10px;
   max-height: 370px;
-  min-height: 100px;
+  min-height: 200px;
   overflow-y: scroll;
-  background-color: #B0C4DE
+  background-color: #E5E8E8;
+  border-radius: 10px;
 }
 
 .chat-name {
@@ -40,6 +46,6 @@ body,
 }
 
 .fullChatBox{
-  margin-left:150px;
-  margin-right: 150px;
+  margin-left:200px;
+  margin-right: 200px;
 }

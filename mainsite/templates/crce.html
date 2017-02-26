@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 720px; width: 100%">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../static/css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,7 +33,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="height: 100%; width: 100%">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -64,76 +65,166 @@
         </div>
       </div>
     </nav>
-      
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li  href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'soccerChat')"><a id="soccer">Soccer</a>
-              </li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'basketballChat')"><a >Basketball</a></li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'squashChat')"><a>Squash</a></li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'athleticsChat')"><a>Atheletic (Track)</a></li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'volleyballChat')"><a>Volleyball</a></li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'tabletennisChat')"><a>Table Tennis</a></li>
-            <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'mphChat')"><a>Multi Purpose Halls</a></li>
-          </ul>
-          </div>
-      </div>
 
-          <script>
-            window.onload = function () {
-                document.getElementById("soccer").click();
-            };
-          </script>
-
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">ChatRoom</h1>
-            <div id = "soccerChat" class="tabcontent">
-
-                
-                
-                
+      <div class="container-fluid" style="height: 100%; width: 100%">
+        <div class="row" style="height: 100%">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+              <li  href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'soccerChat')"><a id="soccer">Soccer</a>
+                </li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'basketballChat')"><a >Basketball</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'squashChat')"><a>Squash</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'athleticsChat')"><a>Atheletic (Track)</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'volleyballChat')"><a>Volleyball</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'tabletennisChat')"><a>Table Tennis</a></li>
+              <li href="javascript:void(0)" class="tablinks" onclick="openChat(event, 'mphChat')"><a>Multi Purpose Halls</a></li>
+            </ul>
             </div>
-            <div id = "basketballChat" class="tabcontent">
- 
-                
-                
-            </div>
-            <div id = "squashChat" class="tabcontent">
+
+            <script>
+              window.onload = function () {
+                  document.getElementById("soccer").click();
+              };
+            </script>
+
+              <div id = "soccerChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(soccer.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Soccer</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                </div>
+              </div>
+
+
+              <div id = "basketballChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(basketball_court.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Basketball</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                </div>
+              </div>
+
+
+              <div id = "squashChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(squash.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Squash</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                </div>
+              </div>
+
+
+              <div id = "athleticsChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(track.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Track</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div id = "volleyballChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(volleyball.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Volleyball</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div id = "tabletennisChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(table_tennis.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Table Tennis</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                  </div>
+              </div>
 
 
 
-                
-            </div>
-            <div id = "athleticsChat" class="tabcontent">
-              
-                
+              <div id = "mphChat" class="tabcontent" style="height: 100%">
+                <div style="background-image: url(badminton.jpg); margin-right: 0px; margin-bottom: 0px; padding: 0dp; height: 100%" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <h1 class="page-header" style="text-align: center; color: #E5E8E8">CRCE Badminton</h1>
+                    <div class="fullChatBox">
+                      <input id="nameInput" type="text" class="chat-name" placeholder="Enter Your name"/>
+                      <div class="chat-messages">
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                        <div class="chat-message">
+                          Teja: This is a test message
+                        </div>
+                      </div>
+                      <textarea id = "textArea" placeholder="Type Your message" style="width: 75%"></textarea>
+                    </div>
+                  </div>
+              </div>
 
-                
-            </div>
-            <div id = "volleyballChat" class="tabcontent">
-            
-                
-                
-
-            </div>
-            <div id = "tabletennisChat" class="tabcontent">
-             
-
-                
-                
-            </div>
-            <div id = "mphChat" class="tabcontent">
-              
-                
-
-                
-            </div>
         </div>
+
       </div>
 
-      
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
     <script src="../static/js/bootstrap.min.js"></script>
@@ -141,6 +232,6 @@
     <script src="../static/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../static/js/ie10-viewport-bug-workaround.js"></script>
-    
+
 </body>
 </html>
